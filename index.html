@@ -1,0 +1,1043 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="kble.css">
+		<style>
+			body{
+			font-size: 15px;
+			}
+			.card .card-header{
+			background-color: #373737;
+			border-radius: calc(20px + 1vw);
+			}
+			.card{
+			background-color: #252525;
+			margin-top:20px;
+			border-radius: calc(20px + 0.9vw);
+			}
+			.card .col-md-6{
+			padding-top: 10px;
+			}
+      h1{
+          font-size:calc(24px + 2vw);
+      }
+			h2{
+			     font-size:calc(12px + 1.5vw);
+			}
+			h3{
+			     font-size:calc(12px + 0.5vw);
+			}
+      .card-item{
+        margin-bottom: 5px;
+      }
+      .progress{
+        margin-bottom: 15px;
+        height:5px;
+        border-radius: 20px;
+        background: #404040;
+      }
+      .progress-bar{
+        background: #ffaeae;
+        border-radius: 20px;
+      }
+		</style>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<title>krResume</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row" style="padding: 16vw 10px 0px 30px">
+				<div class="col-2" style="padding: 0 0 0 0">
+					<img src="kblelogo.png" style="max-width: 100%; ">
+				</div>
+				<div class="col-10 d-flex align-items-end" style="padding-left: 1vw;">
+					<h1 style="margin-bottom: 0;">Caleb CHENG</h1>
+				</div>
+			</div>
+			<div class="card" style="margin-top: 0;">
+				<h2 class="card-header sticky-top" >
+					Profile
+				</h2>
+				<div class="card-body">
+					<p>A year 1 computing student who </p>
+					<ul>
+						<li>use his limited programming skills to solve problems</li>
+						<li>usually find sloutions and learn from Google</li>
+						<li>is curious to learn new stuff</li>
+					</ul>
+				</div>
+			</div>
+			<div class="card">
+				<h2 class="card-header sticky-top" >
+					Contact
+				</h2>
+				<div class="card-body">
+					<ul style="list-style: none; padding-left: 10px;">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="d-flex justify-content-between">
+									<div class="d-flex flex-row align-items-center">
+										<i data-feather="phone" style="max-width:18px"></i>
+										<a href="tel:85255850979">
+											<p class="mb-0" style="padding-left: 18px;">
+												+852-5585-0979
+											</p>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="d-flex justify-content-between">
+									<div class="d-flex flex-row align-items-center">
+										<i data-feather="at-sign" style="max-width:18px"></i>
+										<a href="mailto://work@krs.ovh?cc=kble326@gmail.com">
+											<p class="mb-0" style="padding-left: 18px;">
+												work@krs.ovh
+											</p>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="d-flex justify-content-between">
+									<div class="d-flex flex-row align-items-center">
+										<i data-feather="map-pin" style="max-width:18px"></i>
+										<a href="https://goo.gl/maps/rdH8BisyLruAnVih6">
+											<p class="mb-0" style="padding-left: 18px;">
+												Tuen Mun, Hong Kong
+											</p>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="d-flex justify-content-between">
+									<div class="d-flex flex-row align-items-center">
+										<i data-feather="globe" style="max-width:18px"></i>
+										<a href="https://krs.ovh">
+											<p class="mb-0" style="padding-left: 18px;">
+												krs.ovh (still broken)
+											</p>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="d-flex justify-content-between">
+									<div class="d-flex flex-row align-items-center">
+										<i data-feather="github" style="max-width:18px"></i>
+										<a href="https://github.com/kblerandomstuff">
+											<p class="mb-0" style="padding-left: 18px;">
+												kblerandomstuff
+											</p>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</ul>
+				</div>
+			</div>
+			<div class="card">
+				<h2 class="card-header sticky-top" >
+					Languages
+				</h2>
+				<div class="card-body" style="padding-top:0px;">
+					<div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-4">
+						<div class="col">
+							<div class="card" style="background: #303030">
+								<div class="card-header d-flex justify-content-between" style="background: #353535">
+									<div class="d-flex flex-row align-items-center">
+										<img src="https://raw.githubusercontent.com/krzysztofrewak/flat-flags-iconset/master/flags/gb.png" style="max-width: 25px;">
+										<h3 class="mb-0" style="padding-left: 15px;">
+											English
+										</h3>
+									</div>
+								</div>
+								<div class="card-body" style="padding: 20px 20px 5px 30px;">
+    							<div class="card-item d-flex flex-row align-items-center">
+                    <div class="col-7">
+                      <div class="row">
+    									  <i data-feather="book-open" style="max-width:18px"></i>
+    									  <p style="padding-left: 18px;">reading</p>
+                      </div>
+                    </div>
+                    <div class="col-5">
+                      <div class="progress w-100 justify-items-end">
+                        <div class="progress-bar" role="progressbar" style="width: 80%; "></div>
+                      </div>
+                    </div>
+    							</div>
+                  <div class="card-item d-flex flex-row align-items-center">
+                    <div class="col-7">
+                      <div class="row">
+    									  <i data-feather="headphones" style="max-width:18px"></i>
+    									  <p style="padding-left: 18px;">listening</p>
+                      </div>
+                    </div>
+                    <div class="col-5">
+                      <div class="progress w-100 justify-items-end">
+                        <div class="progress-bar" role="progressbar" style="width: 80%; "></div>
+                      </div>
+                    </div>
+    							</div>
+                  <div class="card-item d-flex flex-row align-items-center">
+                    <div class="col-7">
+                      <div class="row">
+    									  <i data-feather="edit-3" style="max-width:18px"></i>
+    									  <p style="padding-left: 18px;">writing</p>
+                      </div>
+                    </div>
+                    <div class="col-5">
+                      <div class="progress w-100 justify-items-end">
+                        <div class="progress-bar" role="progressbar" style="width: 70%; "></div>
+                      </div>
+                    </div>
+    							</div>
+                  <div class="card-item d-flex flex-row align-items-center">
+                    <div class="col-7">
+                      <div class="row">
+    									  <i data-feather="volume-2" style="max-width:18px"></i>
+    									  <p style="padding-left: 18px;">oral</p>
+                      </div>
+                    </div>
+                    <div class="col-5">
+                      <div class="progress w-100 justify-items-end">
+                        <div class="progress-bar" role="progressbar" style="width: 65%; "></div>
+                      </div>
+                    </div>
+    							</div>
+								</div>
+							</div>
+						</div>
+            <div class="col">
+							<div class="card" style="background: #303030">
+								<div class="card-header d-flex justify-content-between" style="background: #353535">
+									<div class="d-flex flex-row align-items-center">
+										<img src="https://raw.githubusercontent.com/krzysztofrewak/flat-flags-iconset/master/flags/hk.png" style="max-width: 25px;">
+										<h3 class="mb-0" style="padding-left: 15px;">
+											Cantonese
+										</h3>
+									</div>
+								</div>
+								<div class="card-body" style="padding: 20px 20px 5px 30px;">
+                	<div class="card-item d-flex flex-row align-items-center">
+                    <div class="col-7">
+                      <div class="row">
+    									  <i data-feather="book-open" style="max-width:18px"></i>
+    									  <p style="padding-left: 18px;">reading</p>
+                      </div>
+                    </div>
+                    <div class="col-5">
+                      <div class="progress w-100 justify-items-end">
+                        <div class="progress-bar" role="progressbar" style="width: 90%; "></div>
+                      </div>
+                    </div>
+    							</div>
+                  <div class="card-item d-flex flex-row align-items-center">
+                    <div class="col-7">
+                      <div class="row">
+    									  <i data-feather="headphones" style="max-width:18px"></i>
+    									  <p style="padding-left: 18px;">listening</p>
+                      </div>
+                    </div>
+                    <div class="col-5">
+                      <div class="progress w-100 justify-items-end">
+                        <div class="progress-bar" role="progressbar" style="width: 90%; "></div>
+                      </div>
+                    </div>
+    							</div>
+                  <div class="card-item d-flex flex-row align-items-center">
+                    <div class="col-7">
+                      <div class="row">
+    									  <i data-feather="edit-3" style="max-width:18px"></i>
+    									  <p style="padding-left: 18px;">writing</p>
+                      </div>
+                    </div>
+                    <div class="col-5">
+                      <div class="progress w-100 justify-items-end">
+                        <div class="progress-bar" role="progressbar" style="width: 80%; "></div>
+                      </div>
+                    </div>
+    							</div>
+                  <div class="card-item d-flex flex-row align-items-center">
+                    <div class="col-7">
+                      <div class="row">
+    									  <i data-feather="volume-2" style="max-width:18px"></i>
+    									  <p style="padding-left: 18px;">oral</p>
+                      </div>
+                    </div>
+                    <div class="col-5">
+                      <div class="progress w-100 justify-items-end">
+                        <div class="progress-bar" role="progressbar" style="width: 80%; "></div>
+                      </div>
+                    </div>
+    							</div>
+                  <div class="col">
+                    <div class="row">
+                      <i data-feather="info" style="max-width:18px"></i>
+                      <p style="padding-left: 18px;">native language</p>
+                    </div>
+                  </div>
+								</div>
+							</div>
+						</div>
+            <div class="col">
+							<div class="card" style="background: #303030">
+								<div class="card-header d-flex justify-content-between" style="background: #353535">
+									<div class="d-flex flex-row align-items-center">
+										<img src="https://raw.githubusercontent.com/krzysztofrewak/flat-flags-iconset/master/flags/cn.png" style="max-width: 25px;">
+										<h3 class="mb-0" style="padding-left: 15px;">
+											Mandarin
+										</h3>
+									</div>
+								</div>
+								<div class="card-body" style="padding: 20px 20px 5px 30px;">
+    							<div class="card-item d-flex flex-row align-items-center">
+                    <div class="col-7">
+                      <div class="row">
+    									  <i data-feather="book-open" style="max-width:18px"></i>
+    									  <p style="padding-left: 18px;">reading</p>
+                      </div>
+                    </div>
+                    <div class="col-5">
+                      <div class="progress w-100 justify-items-end">
+                        <div class="progress-bar" role="progressbar" style="width: 85%; "></div>
+                      </div>
+                    </div>
+    							</div>
+                  <div class="card-item d-flex flex-row align-items-center">
+                    <div class="col-7">
+                      <div class="row">
+    									  <i data-feather="headphones" style="max-width:18px"></i>
+    									  <p style="padding-left: 18px;">listening</p>
+                      </div>
+                    </div>
+                    <div class="col-5">
+                      <div class="progress w-100 justify-items-end">
+                        <div class="progress-bar" role="progressbar" style="width: 70%; "></div>
+                      </div>
+                    </div>
+    							</div>
+                  <div class="card-item d-flex flex-row align-items-center">
+                    <div class="col-7">
+                      <div class="row">
+    									  <i data-feather="edit-3" style="max-width:18px"></i>
+    									  <p style="padding-left: 18px;">writing</p>
+                      </div>
+                    </div>
+                    <div class="col-5">
+                      <div class="progress w-100 justify-items-end">
+                        <div class="progress-bar" role="progressbar" style="width: 70%; "></div>
+                      </div>
+                    </div>
+    							</div>
+                  <div class="card-item d-flex flex-row align-items-center">
+                    <div class="col-7">
+                      <div class="row">
+    									  <i data-feather="volume-2" style="max-width:18px"></i>
+    									  <p style="padding-left: 18px;">oral</p>
+                      </div>
+                    </div>
+                    <div class="col-5">
+                      <div class="progress w-100 justify-items-end">
+                        <div class="progress-bar" role="progressbar" style="width: 70%; "></div>
+                      </div>
+                    </div>
+    							</div>
+								</div>
+							</div>
+						</div>
+            <div class="col">
+							<div class="card" style="background: #303030">
+								<div class="card-header d-flex justify-content-between" style="background: #353535">
+									<div class="d-flex flex-row align-items-center">
+										<img src="https://raw.githubusercontent.com/krzysztofrewak/flat-flags-iconset/master/flags/jp.png" style="max-width: 25px;">
+										<h3 class="mb-0" style="padding-left: 15px;">
+											Japanese
+										</h3>
+									</div>
+								</div>
+								<div class="card-body" style="padding: 20px 20px 5px 30px;">
+    							<div class="card-item d-flex flex-row align-items-center">
+                    <div class="col-7">
+                      <div class="row">
+    									  <i data-feather="book-open" style="max-width:18px"></i>
+    									  <p style="padding-left: 18px;">reading</p>
+                      </div>
+                    </div>
+                    <div class="col-5">
+                      <div class="progress w-100 justify-items-end">
+                        <div class="progress-bar" role="progressbar" style="width: 10%; "></div>
+                      </div>
+                    </div>
+    							</div>
+                  <div class="card-item d-flex flex-row align-items-center">
+                    <div class="col-7">
+                      <div class="row">
+    									  <i data-feather="headphones" style="max-width:18px"></i>
+    									  <p style="padding-left: 18px;">listening</p>
+                      </div>
+                    </div>
+                    <div class="col-5">
+                      <div class="progress w-100 justify-items-end">
+                        <div class="progress-bar" role="progressbar" style="width: 5%; "></div>
+                      </div>
+                    </div>
+    							</div>
+                  <div class="card-item d-flex flex-row align-items-center">
+                    <div class="col-7">
+                      <div class="row">
+    									  <i data-feather="edit-3" style="max-width:18px"></i>
+    									  <p style="padding-left: 18px;">writing</p>
+                      </div>
+                    </div>
+                    <div class="col-5">
+                      <div class="progress w-100 justify-items-end">
+                        <div class="progress-bar" role="progressbar" style="width: 1%; "></div>
+                      </div>
+                    </div>
+    							</div>
+                  <div class="card-item d-flex flex-row align-items-center">
+                    <div class="col-7">
+                      <div class="row">
+    									  <i data-feather="volume-2" style="max-width:18px"></i>
+    									  <p style="padding-left: 18px;">oral</p>
+                      </div>
+                    </div>
+                    <div class="col-5">
+                      <div class="progress w-100 justify-items-end">
+                        <div class="progress-bar" role="progressbar" style="width: 5%; "></div>
+                      </div>
+                    </div>
+    							</div>
+                  <div class="col">
+                    <div class="row">
+                      <i data-feather="info" style="max-width:18px"></i>
+                      <p style="padding-left: 18px;">self learning</p>
+                    </div>
+                  </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<h2 class="card-header sticky-top" >
+					Skills
+				</h2>
+				<div class="card-body" style="padding-top:5px;">
+          <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-4">
+						<div class="col">
+              <div class="card" style="background: #303030">
+								<div class="card-header d-flex justify-content-between" style="background: #353535">
+									<div class="d-flex flex-row align-items-center">
+										<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" style="max-width: 25px;">
+										<h3 class="mb-0" style="padding-left: 15px;">
+											Python
+										</h3>
+									</div>
+								</div>
+                <div class="card-body" style="padding: 20px 20px 5px 30px;">
+                  <div class="col">
+                    <div class="card-item d-flex flex-row align-items-center">
+                      <div class="row">
+      									 <i data-feather="calendar" style="max-width:18px"></i>
+      									 <p style="padding-left: 18px;">from 2021 to recent</p>
+                      </div>
+                    </div>
+                  </div>
+                  <ul style="padding-left: 20px;">
+                    <li>basic operation</li>
+                    <li>usage of packages with docunments</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="background: #303030">
+  							<div class="card-header d-flex justify-content-between" style="background: #353535">
+  								<div class="d-flex flex-row align-items-center">
+  									<img src="https://edenacademy.com.np/wp-content/uploads/2019/11/1_lJ32Bl-lHWmNMUSiSq17gQ.png" style="max-width: 35px;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Javascript-shield.svg/1200px-Javascript-shield.svg.png" style="padding-left: 4px; max-width: 17px;">
+                    <h3 class="mb-0" style="padding-left: 15px;">
+											HTML + CSS + Javascript
+ 										</h3>
+									</div>
+								</div>
+                <div class="card-body" style="padding: 20px 20px 5px 30px;">
+                  <div class="col">
+                    <div class="card-item d-flex flex-row align-items-center">
+                      <div class="row">
+      									 <i data-feather="calendar" style="max-width:18px"></i>
+      									 <p style="padding-left: 18px;">from 2015 to recent</p>
+                      </div>
+                    </div>
+                  </div>
+                  <ul style="padding-left: 20px;">
+                    <li>mostly used with Bootstrap to reduce development time</li>
+                    <li>simple Javascript operation (with/without JQuery)</li>
+                    <li>documents/references required</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="background: #303030">
+  							<div class="card-header d-flex justify-content-between" style="background: #353535">
+  								<div class="d-flex flex-row align-items-center">
+  									<img src="https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,w_200,h_200/https://assets.ubuntu.com/v1/ed348358-logo-cof.svg" style="max-width: 25px;">
+                    <img src="https://cdn-icons-png.flaticon.com/512/919/919853.png" style="margin-left: 8px; max-width: 25px;">
+                    <h3 class="mb-0" style="padding-left: 15px;">
+											Ubuntu + Docker
+ 										</h3>
+									</div>
+								</div>
+                <div class="card-body" style="padding: 20px 20px 5px 30px;">
+                  <div class="col">
+                    <div class="card-item d-flex flex-row align-items-center">
+                      <div class="row">
+      									 <i data-feather="calendar" style="max-width:18px"></i>
+      									 <p style="padding-left: 18px;">recently (this month)</p>
+                      </div>
+                    </div>
+                  </div>
+                  <ul style="padding-left: 20px;">
+                    <li>basic ubuntu cli comand</li>
+                    <li>basic server setup</li>
+                    <li>basic container deployment</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="background: #303030">
+  							<div class="card-header d-flex justify-content-between" style="background: #353535">
+  								<div class="d-flex flex-row align-items-center">
+  									<img src="https://avatars.githubusercontent.com/u/8629072?s=280&v=4" style="max-width: 25px;">
+                    <h3 class="mb-0" style="padding-left: 15px;">
+											Nginx
+ 										</h3>
+									</div>
+								</div>
+                <div class="card-body" style="padding: 20px 20px 5px 30px;">
+                  <div class="col">
+                    <div class="card-item d-flex flex-row align-items-center">
+                      <div class="row">
+      									 <i data-feather="calendar" style="max-width:18px"></i>
+      									 <p style="padding-left: 18px;">recently (this month)</p>
+                      </div>
+                    </div>
+                  </div>
+                  <ul style="padding-left: 20px;">
+                    <li>basic nginx setup with SSL support</li>
+                    <li>reverse proxy for hosting multiple domain</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="background: #303030">
+  							<div class="card-header d-flex justify-content-between" style="background: #353535">
+  								<div class="d-flex flex-row align-items-center">
+  									<img src="https://raw.githubusercontent.com/github/explore/db5984103161a6f28a99b69bd609873d83a21d75/topics/cloudflare/cloudflare.png" style="max-width: 25px;">
+                    <h3 class="mb-0" style="padding-left: 15px;">
+											cloudflare
+ 										</h3>
+									</div>
+								</div>
+                <div class="card-body" style="padding: 20px 20px 5px 30px;">
+                  <div class="col">
+                    <div class="card-item d-flex flex-row align-items-center">
+                      <div class="row">
+      									 <i data-feather="calendar" style="max-width:18px"></i>
+      									 <p style="padding-left: 18px;">from 2018 to recent</p>
+                      </div>
+                    </div>
+                  </div>
+                  <ul style="padding-left: 20px;">
+                    <li>basic domain name management</li>
+										<li>basic worker deployment</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="background: #303030">
+  							<div class="card-header d-flex justify-content-between" style="background: #353535">
+  								<div class="d-flex flex-row align-items-center">
+  									<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Logo_of_Hugo_the_static_website_generator.svg/2560px-Logo_of_Hugo_the_static_website_generator.svg.png" style="max-width: 60px;">
+                    <h3 class="mb-0" style="padding-left: 15px;">
+											HUGO
+ 										</h3>
+									</div>
+								</div>
+                <div class="card-body" style="padding: 20px 20px 5px 30px;">
+                  <div class="col">
+                    <div class="card-item d-flex flex-row align-items-center">
+                      <div class="row">
+      									 <i data-feather="calendar" style="max-width:18px"></i>
+      									 <p style="padding-left: 18px;">in 2020-2021</p>
+                      </div>
+                    </div>
+                  </div>
+                  <ul style="padding-left: 20px;">
+                    <li>simple site generation</li>
+                    <li>modifying layout and theme (documents/references required)</li>
+										<li>deploy site to Netlify using Githib Action</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="background: #303030">
+  							<div class="card-header d-flex justify-content-between" style="background: #353535">
+  								<div class="d-flex flex-row align-items-center">
+  									<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Android_Studio_Icon_3.6.svg/1900px-Android_Studio_Icon_3.6.svg.png" style="max-width: 25px;">
+                    <h3 class="mb-0" style="padding-left: 15px;">
+											Android App
+ 										</h3>
+									</div>
+								</div>
+                <div class="card-body" style="padding: 20px 20px 5px 30px;">
+                  <div class="col">
+                    <div class="card-item d-flex flex-row align-items-center">
+                      <div class="row">
+      									 <i data-feather="calendar" style="max-width:18px"></i>
+      									 <p style="padding-left: 18px;">in 2021</p>
+                      </div>
+                    </div>
+                  </div>
+                  <ul style="padding-left: 20px;">
+                    <li>build simple app with snippet</li>
+                    <li>hands-on only</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="background: #303030">
+  							<div class="card-header d-flex justify-content-between" style="background: #353535">
+  								<div class="d-flex flex-row align-items-center">
+  									<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/800px-ISO_C%2B%2B_Logo.svg.png" style="max-width: 25px;">
+                    <h3 class="mb-0" style="padding-left: 15px;">
+											C++
+ 										</h3>
+									</div>
+								</div>
+                <div class="card-body" style="padding: 20px 20px 5px 30px;">
+                  <div class="col">
+                    <div class="card-item d-flex flex-row align-items-center">
+                      <div class="row">
+      									 <i data-feather="calendar" style="max-width:18px"></i>
+      									 <p style="padding-left: 18px;">in 2019</p>
+                      </div>
+                    </div>
+                  </div>
+                  <ul style="padding-left: 20px;">
+                    <li>basic operations</li>
+                    <li>rarely used</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="background: #303030">
+  							<div class="card-header d-flex justify-content-between" style="background: #353535">
+  								<div class="d-flex flex-row align-items-center">
+  									<img src="https://plumbr.io/app/uploads/2019/06/java.png" style="max-width: 25px;">
+                    <h3 class="mb-0" style="padding-left: 15px;">
+											Java
+ 										</h3>
+									</div>
+								</div>
+                <div class="card-body" style="padding: 20px 20px 5px 30px;">
+                  <div class="col">
+                    <div class="card-item d-flex flex-row align-items-center">
+                      <div class="row">
+      									 <i data-feather="calendar" style="max-width:18px"></i>
+      									 <p style="padding-left: 18px;">in 2020-2021</p>
+                      </div>
+                    </div>
+                  </div>
+                  <ul style="padding-left: 20px;">
+                    <li>basic operations</li>
+                    <li>simple objected-oriented programming</li>
+                    <li>rarely used</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+						<div class="col">
+              <div class="card" style="background: #303030">
+  							<div class="card-header d-flex justify-content-between" style="background: #353535">
+  								<div class="d-flex flex-row align-items-center">
+  									<img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/68/Oracle_SQL_Developer_logo.svg/1200px-Oracle_SQL_Developer_logo.svg.png" style="max-width: 25px;">
+                    <h3 class="mb-0" style="padding-left: 15px;">
+											SQL
+ 										</h3>
+									</div>
+								</div>
+                <div class="card-body" style="padding: 20px 20px 5px 30px;">
+                  <div class="col">
+                    <div class="card-item d-flex flex-row align-items-center">
+                      <div class="row">
+      									 <i data-feather="calendar" style="max-width:18px"></i>
+      									 <p style="padding-left: 18px;">in 2020-2021</p>
+                      </div>
+                    </div>
+                  </div>
+                  <ul style="padding-left: 20px;">
+                    <li>basic operations</li>
+                    <li>connection with Oracle Database and python </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+						<div class="col">
+              <div class="card" style="background: #303030">
+  							<div class="card-header d-flex justify-content-between" style="background: #353535">
+  								<div class="d-flex flex-row align-items-center">
+  									<img src="https://res.cloudinary.com/practicaldev/image/fetch/s--TNSLqWFK--/c_fill,f_auto,fl_progressive,h_320,q_auto,w_320/https://dev-to-uploads.s3.amazonaws.com/uploads/organization/profile_image/140/fec5c82f-9870-4277-8ec9-a1ccf5505bf5.png" style="max-width: 25px;">
+                    <h3 class="mb-0" style="padding-left: 15px;">
+											MongoDB
+ 										</h3>
+									</div>
+								</div>
+                <div class="card-body" style="padding: 20px 20px 5px 30px;">
+                  <div class="col">
+                    <div class="card-item d-flex flex-row align-items-center">
+                      <div class="row">
+      									 <i data-feather="calendar" style="max-width:18px"></i>
+      									 <p style="padding-left: 18px;">in 2021</p>
+                      </div>
+                    </div>
+                  </div>
+                  <ul style="padding-left: 20px;">
+                    <li>basic operations</li>
+                    <li>built simple Restful API with Node.JS </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+						<div class="col">
+              <div class="card" style="background: #303030">
+  							<div class="card-header d-flex justify-content-between" style="background: #353535">
+  								<div class="d-flex flex-row align-items-center">
+  									<img src="https://archive.axure.com/img/rpicon.png" style="max-width: 25px;">
+                    <h3 class="mb-0" style="padding-left: 15px;">
+											AxureRP
+ 										</h3>
+									</div>
+								</div>
+                <div class="card-body" style="padding: 20px 20px 5px 30px;">
+                  <div class="col">
+                    <div class="card-item d-flex flex-row align-items-center">
+                      <div class="row">
+      									 <i data-feather="calendar" style="max-width:18px"></i>
+      									 <p style="padding-left: 18px;">in 2020</p>
+                      </div>
+                    </div>
+                  </div>
+                  <ul style="padding-left: 20px;">
+                    <li>simple UI design</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+						<div class="col">
+              <div class="card" style="background: #303030">
+  							<div class="card-header d-flex justify-content-between" style="background: #353535">
+  								<div class="d-flex flex-row align-items-center">
+  									<img src="https://cdn2.downdetector.com/static/uploads/logo/figma2.png" style="max-width: 25px;">
+                    <h3 class="mb-0" style="padding-left: 15px;">
+											Figma
+ 										</h3>
+									</div>
+								</div>
+                <div class="card-body" style="padding: 20px 20px 5px 30px;">
+                  <div class="col">
+                    <div class="card-item d-flex flex-row align-items-center">
+                      <div class="row">
+      									 <i data-feather="calendar" style="max-width:18px"></i>
+      									 <p style="padding-left: 18px;">in 2021</p>
+                      </div>
+                    </div>
+                  </div>
+                  <ul style="padding-left: 20px;">
+                    <li>simple UI design</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+						<div class="col">
+							<div class="card" style="background: #303030">
+								<div class="card-header d-flex justify-content-between" style="background: #353535">
+									<div class="d-flex flex-row align-items-center">
+										<img src="https://assets.procreate.art/img/procreate-icon-search-display.png" style="max-width: 25px;">
+										<h3 class="mb-0" style="padding-left: 15px;">
+											Procreate
+										</h3>
+									</div>
+								</div>
+								<div class="card-body" style="padding: 20px 20px 5px 30px;">
+									<div class="col">
+										<div class="card-item d-flex flex-row align-items-center">
+											<div class="row">
+												 <i data-feather="calendar" style="max-width:18px"></i>
+												 <p style="padding-left: 18px;">from 2020 to recent</p>
+											</div>
+										</div>
+									</div>
+									<ul style="padding-left: 20px;">
+										<li>basic drawing skills</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+            <div class="col">
+              <div class="card" style="background: #303030">
+  							<div class="card-header d-flex justify-content-between" style="background: #353535">
+  								<div class="d-flex flex-row align-items-center">
+  									<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Microsoft_Office_logo_%282019%E2%80%93present%29.svg/1200px-Microsoft_Office_logo_%282019%E2%80%93present%29.svg.png" style="max-width: 25px;">
+                    <h3 class="mb-0" style="padding-left: 15px;">
+											Microsoft Office
+ 										</h3>
+									</div>
+								</div>
+                <div class="card-body" style="padding: 20px 20px 5px 30px;">
+                  <div class="col">
+                    <div class="card-item d-flex flex-row align-items-center">
+                      <div class="row">
+      									 <i data-feather="calendar" style="max-width:18px"></i>
+      									 <p style="padding-left: 18px;">all time</p>
+                      </div>
+                    </div>
+                  </div>
+                  <ul style="padding-left: 20px;">
+                    <li>basic docunment editing</li>
+                    <li>no experience in VBA/macro</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="background: #303030">
+  							<div class="card-header d-flex justify-content-between" style="background: #353535">
+  								<div class="d-flex flex-row align-items-center">
+  									<img src="https://www.intelligencepartner.com/wp-content/uploads/2020/10/Admin_Product_Icon_288dp.png" style="max-width: 35px;">
+                    <h3 class="mb-0" style="padding-left: 15px;">
+											Google Workspace Admin
+ 										</h3>
+									</div>
+								</div>
+                <div class="card-body" style="padding: 20px 20px 5px 30px;">
+                  <div class="col">
+                    <div class="card-item d-flex flex-row align-items-center">
+                      <div class="row">
+      									 <i data-feather="calendar" style="max-width:18px"></i>
+      									 <p style="padding-left: 18px;">from 2021 to recent</p>
+                      </div>
+                    </div>
+                  </div>
+                  <ul style="padding-left: 20px;">
+                    <li>basic user management</li>
+                    <li>data migration</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="background: #303030">
+  							<div class="card-header d-flex justify-content-between" style="background: #353535">
+  								<div class="d-flex flex-row align-items-center">
+  									<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Microsoft_Office_logo_%282019%E2%80%93present%29.svg/1200px-Microsoft_Office_logo_%282019%E2%80%93present%29.svg.png" style="max-width: 25px;">
+                    <h3 class="mb-0" style="padding-left: 15px;">
+											Microsoft 365 Admin
+ 										</h3>
+									</div>
+								</div>
+                <div class="card-body" style="padding: 20px 20px 5px 30px;">
+                  <div class="col">
+                    <div class="card-item d-flex flex-row align-items-center">
+                      <div class="row">
+      									 <i data-feather="calendar" style="max-width:18px"></i>
+      									 <p style="padding-left: 18px;">from 2021 to recent</p>
+                      </div>
+                    </div>
+                  </div>
+                  <ul style="padding-left: 20px;">
+                    <li>basic user management</li>
+                    <li>data migration</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+				</div>
+			</div>
+			<div class="card">
+				<h2 class="card-header sticky-top" >
+					Education
+				</h2>
+				<div class="card-body" style="padding-top:0px;">
+					<div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 g-4">
+						<div class="col">
+              <div class="card" style="background: #303030">
+								<div class="card-header d-flex justify-content-between" style="background: #353535">
+									<div class="d-flex flex-row align-items-center">
+										<img src="https://dnd3y8e5nonx2.cloudfront.net/groups/avatars/267479/1572943558/original." style="max-width: 25px;">
+										<h3 class="mb-0" style="padding-left: 15px;">
+											The Hong Kong Polytechnic University
+										</h3>
+									</div>
+								</div>
+                <div class="card-body" style="padding: 20px 20px 5px 30px;">
+                  <div class="col">
+                    <div class="card-item d-flex flex-row align-items-center">
+                      <div class="row">
+      									 <i data-feather="calendar" style="max-width:18px"></i>
+      									 <p style="padding-left: 18px;">2021 - 2024(planned)</p>
+                      </div>
+                    </div>
+										<div class="card-item d-flex flex-row align-items-center">
+											<div class="row">
+												 <i data-feather="book" style="max-width:18px"></i>
+												 <p style="padding-left: 18px;">BSc (HONS) SCHEME IN COMPUTING</p>
+											</div>
+										</div>
+										<div class="card-item d-flex flex-row align-items-center">
+											<div class="row">
+												 <i data-feather="book" style="max-width:18px"></i>
+												 <p style="padding-left: 18px;">current GPA 2.98</p>
+											</div>
+										</div>
+									</div>
+                </div>
+              </div>
+            </div>
+						<div class="col">
+              <div class="card" style="background: #303030">
+								<div class="card-header d-flex justify-content-between" style="background: #353535">
+									<div class="d-flex flex-row align-items-center">
+										<img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b7/PolyU_HKCC.svg/1200px-PolyU_HKCC.svg.png" style="max-width: 25px;">
+										<h3 class="mb-0" style="padding-left: 15px;">
+											Hong Kong Community College
+										</h3>
+									</div>
+								</div>
+                <div class="card-body" style="padding: 20px 20px 15px 30px;">
+                  <div class="col">
+                    <div class="card-item d-flex flex-row align-items-center">
+                      <div class="row">
+      									 <i data-feather="calendar" style="max-width:18px"></i>
+      									 <p style="padding-left: 18px;">2019 - 2021</p>
+                      </div>
+                    </div>
+										<div class="card-item d-flex flex-row align-items-center">
+											<div class="row">
+												 <i data-feather="book" style="max-width:18px"></i>
+												 <p style="padding-left: 18px;">Associate in Information Technology</p>
+											</div>
+										</div>
+										<div class="card-item d-flex flex-row align-items-center">
+											<div class="row">
+												 <i data-feather="book" style="max-width:18px"></i>
+												 <p style="padding-left: 18px;">graduate with GPA of 3.36</p>
+											</div>
+										</div>
+									</div>
+                </div>
+              </div>
+            </div>
+						<div class="col">
+              <div class="card" style="background: #303030">
+								<div class="card-header d-flex justify-content-between" style="background: #353535">
+									<div class="d-flex flex-row align-items-center">
+										<img src="https://www.makopan.edu.hk/download/Resource/BGImage/schoolLogo01.png" style="max-width: 25px;">
+										<h3 class="mb-0" style="padding-left: 15px;">
+											Ma Kam Ming Charitable Foundation Ma Ko Pan Memorial College
+										</h3>
+									</div>
+								</div>
+                <div class="card-body" style="padding: 20px 20px 5px 30px;">
+                  <div class="col">
+                    <div class="card-item d-flex flex-row align-items-center">
+                      <div class="row">
+      									 <i data-feather="calendar" style="max-width:18px"></i>
+      									 <p style="padding-left: 18px;">2013 - 2019</p>
+                      </div>
+                    </div>
+										<div class="card-item d-flex flex-row align-items-center">
+											<div class="row">
+												 <i data-feather="book" style="max-width:18px"></i>
+												 <p style="padding-left: 18px;">graduate with HKDSE</p>
+											</div>
+										</div>
+										<ul style="padding-left: 20px;">
+	                    <li>Chinese - 2</li>
+	                    <li>English - 4</li>
+											<li>Mathematics - 3</li>
+											<li>Liberal Studies - 2</li>
+											<li>I.C.T. - 4</li>
+											<li>Physics - 3</li>
+	                  </ul>
+									</div>
+                </div>
+              </div>
+            </div>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<h2 class="card-header sticky-top" >
+					Working Experiences
+				</h2>
+				<div class="card-body">
+					None for now.<br>If part-time job counted, I work at KFC for fund to use in mini projects.
+				</div>
+			</div>
+			<div class="card">
+				<h2 class="card-header sticky-top" >
+					Interests
+				</h2>
+				<div class="card-body">
+          <ul style="padding-left: 20px;">
+            <li>Data holder for ~90TB at Google Drive, ~30TB at OneDrive and ~40TB locally</li>
+            <li>Self assigned projects</li>
+            <li>Android ROM testing, device including:
+              <ul>
+                <li>Redmi 2</li>
+                <li>Redmi 3s</li>
+                <li>Redmi Note 3</li>
+                <li>Redmi 5 Plus</li>
+                <li>Le Max 2</li>
+                <li>Google Pixel XL</li>
+                <li>Amazon Fire HDX7</li>
+                <li>Xiaomi Mi Pad</li>
+              </ul>
+            </li>
+            <li>Troubleshot hardware/software problems</li>
+						<li>Make use of free services</li>
+						<li>Drawing</li>
+          </ul>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+	<script>
+		feather.replace()
+	</script>
+</html>
